@@ -1,15 +1,15 @@
 class Qstack < Formula
   desc "Minimal, scriptable task and issue tracker for agent-driven workflows"
   homepage "https://github.com/domzilla/qstack"
-  url "https://github.com/domzilla/qstack/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "d1d08cac33f310afcf8aa03c19ccd83a5cd4efb7ea74ab9a93dc711c26b8ca93"
+  url "https://github.com/domzilla/qstack/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "2f7faaf2134c4717b29dad8cad4653d4268167d499a291292fd3dcc06b5c779c"
   license "MIT"
   head "https://github.com/domzilla/qstack.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/domzilla/qstack/releases/download/v0.1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "22f78cd20d932b1ee3016e6ce6093c45fe7d0948a9006cec38a3e583c3531bd5"
-    sha256 cellar: :any_skip_relocation, sonoma: "07a110b4d21141069c6aeee1015308c561849d4e94f7086559c74029bd47b2aa"
+    root_url "https://github.com/domzilla/qstack/releases/download/v0.1.2"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "572ee0f7d8e696b98f88e276a19b01c7a4741694dbbf243a27a35b2338b712c1"
+    sha256 cellar: :any_skip_relocation, sonoma: "141b81205534b7710d245f0a866e186b17afde8511dd2963373cfad5d5e79504"
   end
 
   depends_on "rust" => :build
