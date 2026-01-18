@@ -12,25 +12,25 @@ brew tap domzilla/tap
 
 | Formula | Description |
 |---------|-------------|
-| [qstack](https://github.com/domzilla/qstack) | Minimal, scriptable task and issue tracker for agent-driven workflows |
+| [queuestack](https://github.com/domzilla/queuestack) | Minimal, scriptable task and issue tracker for agent-driven workflows |
 
 ## Installing a Formula
 
 ```bash
-brew install domzilla/tap/qstack
+brew install domzilla/tap/queuestack
 ```
 
 Or after tapping:
 
 ```bash
-brew install qstack
+brew install queuestack
 ```
 
 ## Updating
 
 ```bash
 brew update
-brew upgrade qstack
+brew upgrade queuestack
 ```
 
 ## Issues
