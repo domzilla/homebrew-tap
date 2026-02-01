@@ -1,15 +1,15 @@
 class Queuestack < Formula
   desc "Minimal, scriptable task and issue tracker for agent-driven workflows"
   homepage "https://github.com/domzilla/queuestack"
-  url "https://github.com/domzilla/queuestack/archive/refs/tags/v0.5.4.tar.gz"
-  sha256 "97c15d71f6fb0f64d1323cbdeb0defc58ff16cfee894314e034669b22c64f466"
+  url "https://github.com/domzilla/queuestack/archive/refs/tags/v0.5.5.tar.gz"
+  sha256 "53678716ed581e74ce0f092f4b3478622cac96658fedfc21115ea8c7ab8f6d72"
   license "MIT"
   head "https://github.com/domzilla/queuestack.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/domzilla/queuestack/releases/download/v0.5.4"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "91c13439f6f6bcaa75b077300a913198c07dc878d4c5f2af1be24d1aecf88cf3"
-    sha256 cellar: :any_skip_relocation, sonoma: "870b7f0cbf16ec227fef881d79cf460e0bbae49c48c9c6792d60f19ef228ffb4"
+    root_url "https://github.com/domzilla/queuestack/releases/download/v0.5.5"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "e7ce5cba0e0023a61f399ffdf4c97c1d29e4a3820c9f8cf047724dcd8aa4ea22"
+    sha256 cellar: :any_skip_relocation, sonoma: "e2cdcf31410b0eea70734f3038dd1ad9ead766bad0d9ae925c7e2622379b6c80"
   end
 
   depends_on "rust" => :build
