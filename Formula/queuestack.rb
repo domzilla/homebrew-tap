@@ -8,8 +8,8 @@ class Queuestack < Formula
 
   bottle do
     root_url "https://github.com/domzilla/queuestack/releases/download/v0.5.4"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "300f0ee66fa3123aeb4184041df154987ebe83dd22c59fa7b3562206f907c653"
-    sha256 cellar: :any_skip_relocation, sonoma: "80f73b88f662d5bf4b61b951a450f49ef291e66c6589be59fadda3c1116b4ccd"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "91c13439f6f6bcaa75b077300a913198c07dc878d4c5f2af1be24d1aecf88cf3"
+    sha256 cellar: :any_skip_relocation, sonoma: "870b7f0cbf16ec227fef881d79cf460e0bbae49c48c9c6792d60f19ef228ffb4"
   end
 
   depends_on "rust" => :build
