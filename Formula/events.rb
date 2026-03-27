@@ -1,15 +1,15 @@
 class Events < Formula
   desc "CLI tool for interacting with macOS Calendar and Reminders via EventKit"
   homepage "https://github.com/domzilla/events"
-  url "https://github.com/domzilla/events/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "6fbf499595714f6c68180a46788eb269904bfd0a397be123ac1c29199b841e11"
+  url "https://github.com/domzilla/events/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "5b3837cc9c51a9e2d5897dff42e52b7dbb350f8a59ecf9f224631c891db36742"
   license "MIT"
   head "https://github.com/domzilla/events.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/domzilla/events/releases/download/v1.0.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "6087c54f4916e6d6d7e275351b684421d064c225266b48e4ac51ed9be64f10a6"
-    sha256 cellar: :any_skip_relocation, tahoe: "a02700a37fd219ecbda57998257d388c86d768e5204d7e656fed2c3b65b0f575"
+    root_url "https://github.com/domzilla/events/releases/download/v1.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "ce0652afaa174a5c1551ec8a708df9afc4ef7a89c9b031373f42bbc405b59d26"
+    sha256 cellar: :any_skip_relocation, tahoe: "7bd078c0187befcd66a2896c76d29daf89e645d61656c1fb41dd8b0f62e52f61"
   end
 
   depends_on xcode: ["14.0", :build]
