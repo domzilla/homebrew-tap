@@ -1,15 +1,15 @@
 class Asc < Formula
   desc "App Store Connect API client for AI agents, with a built-in blocklist"
   homepage "https://github.com/domzilla/asc"
-  url "https://github.com/domzilla/asc/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "ec848c89161bc9b20da455c30e606695af4e2f86ede46d302d1a86dbbaeaf3d8"
+  url "https://github.com/domzilla/asc/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "72090fb948780eeb197acc150bee666b7642125f6d80caca5435fd06ff6e9820"
   license "MIT"
   head "https://github.com/domzilla/asc.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/domzilla/asc/releases/download/v1.0.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "97abcc9b036bee08d72b5067b19ba53c9e732180c31871db96dda4bd159577b6"
-    sha256 cellar: :any_skip_relocation, tahoe: "c5fa6e47d92ee5cf02e203473743a2b7c6dce06465da5303657045fe35810441"
+    root_url "https://github.com/domzilla/asc/releases/download/v1.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "7f0532590a9902a64b63f8f9dbfab92f65f2b81d661ea70713e17de7a07a5ec3"
+    sha256 cellar: :any_skip_relocation, tahoe: "4d86ee75d666d4cdd22664fa0ff099545a5125e8316fed5682ccfc5aa0505292"
   end
 
   depends_on xcode: ["16.0", :build]
