@@ -1,15 +1,15 @@
 class AppleCli < Formula
-  desc "App Store Connect API client for AI agents, with a built-in blocklist"
+  desc "App Store Connect (with a built-in blocklist) and Apple Ads API clients for AI agents"
   homepage "https://github.com/domzilla/apple-cli"
-  url "https://github.com/domzilla/apple-cli/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "57fd4075673c3334ce879a57d7207b24edb5989d04599d352f0c16a3cc9fed84"
+  url "https://github.com/domzilla/apple-cli/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "a8303d6886de94248142e798e22f18e1e57be8bc855992b535212cd9eaf88b68"
   license "MIT"
   head "https://github.com/domzilla/apple-cli.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/domzilla/apple-cli/releases/download/v1.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "2d272b1b0274fa23753f1e3e01017e7105a7478f930719f32b599ad91d304581"
-    sha256 cellar: :any_skip_relocation, tahoe: "089b3a39b0f66c3e4ccbe38c1af96f230aa349647289dbffa63b84c0fd812f5a"
+    root_url "https://github.com/domzilla/apple-cli/releases/download/v1.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "d62ab8d9d84df002b96088cd5d1db3710e8a6d3b318f2665da4fa31fe60712e9"
+    sha256 cellar: :any_skip_relocation, tahoe: "e87b58ce5b853066fe0fbf74f7fdeb04a4821db2f479b7e3f98f609a33df23a5"
   end
 
   depends_on xcode: ["16.0", :build]
@@ -17,10 +17,11 @@ class AppleCli < Formula
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/asc"
+    bin.install ".build/release/asc", ".build/release/asa"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/asc --version")
+    assert_match version.to_s, shell_output("#{bin}/asa --version")
   end
 end
